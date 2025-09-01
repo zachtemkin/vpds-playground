@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ComponentContainer from "./ComponentContainer";
 import StyledDefaultInput from "./styled-visa-components/StyledInput";
+import StyledNoAutocompleteCombobox from "./styled-visa-components/StyledComboBox";
 
 const GridContainer = styled.div`
   display: grid;
@@ -54,6 +55,12 @@ const ComponentList = () => {
         <ComponentErrorBoundary>
           <ComponentContainer title={"Input"}>
             <StyledDefaultInput />
+          </ComponentContainer>
+        </ComponentErrorBoundary>
+
+        <ComponentErrorBoundary>
+          <ComponentContainer title={"ComboBox"}>
+            <StyledNoAutocompleteCombobox />
           </ComponentContainer>
         </ComponentErrorBoundary>
       </GridContainer>

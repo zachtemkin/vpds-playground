@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@visa/nova-react": "^2.5.4",
+    "downshift": "^9.0.10",
+    "framer-motion": "^12.23.12",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "styled-components": "^6.1.19"
