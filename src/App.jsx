@@ -4,6 +4,7 @@ import ComponentList from "./components/ComponentList";
 // Styled Components
 const AppContainer = styled.div`
   min-height: 100vh;
+  padding: 0 2rem;
   background: #f5f5f5;
   display: flex;
   flex-direction: column;

@@ -85,8 +85,8 @@ const GlobalStyles = createGlobalStyle`
 
   /* Focus styles for accessibility */
   :focus {
-    outline: 2px solid #667eea;
-    outline-offset: 2px;
+    /* outline: 2px solid #667eea; */
+    /* outline-offset: 2px; */
   }
 
   /* Selection styles */

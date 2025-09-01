@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import ComponentContainer from "./ComponentContainer";
+import StyledDefaultInput from "./styled-visa-components/StyledInput";
 
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 24px;
-  padding: 24px;
   max-width: 1400px;
   margin: 0 auto;
 `;
@@ -42,7 +42,7 @@ const ComponentErrorBoundary = ({ children, fallback }) => {
 
 const ComponentList = () => {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <Header>
         <HeaderTitle>Visa Nova Components</HeaderTitle>
         <HeaderSubtitle>
@@ -52,8 +52,8 @@ const ComponentList = () => {
 
       <GridContainer>
         <ComponentErrorBoundary>
-          <ComponentContainer title={"hello"}>
-            <div>hello</div>
+          <ComponentContainer title={"Input"}>
+            <StyledDefaultInput />
           </ComponentContainer>
         </ComponentErrorBoundary>
       </GridContainer>

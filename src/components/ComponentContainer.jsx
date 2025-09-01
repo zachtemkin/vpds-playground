@@ -8,11 +8,6 @@ const Container = styled.div`
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
-
-  &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-  }
 `;
 
 const Title = styled.h3`
@@ -24,22 +19,14 @@ const Title = styled.h3`
   padding-bottom: 8px;
 `;
 
-const Description = styled.p`
-  margin: 0 0 16px 0;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-`;
-
 const ComponentWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80px;
-  padding: 16px;
-  background: #f8f9fa;
-  border-radius: 6px;
-  border: 1px dashed #ccc;
+  padding: 1rem 0;
+  /* border-radius: 6px; */
+  /* border: 1px dashed #ccc; */
 `;
 
 const ComponentContainer = ({ title, children }) => {
